@@ -1,0 +1,16 @@
+docker-machine create --driver vmwarefusion --vmwarefusion-memory-size 2048 --vmwarefusion-boot2docker-url=https://releases.rancher.com/os/latest/rancheros.iso RancherOS
+eval $(docker-machine env RancherOS)
+docker-machine ip RancherOS
+
+
+On RancherOS
+
+sudo ros os list
+sudo ros os upgrade
+
+sudo ros engine list
+sudo ros engine switch
+
+
+
+docker-machine create --driver vmwarefusion --vmwarefusion-memory-size 2048 --vmwarefusion-boot2docker-url= https://github.com/rancher/os/releases/download/v0.9.2-rc4/rancheros.iso RancherOS
